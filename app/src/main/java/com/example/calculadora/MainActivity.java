@@ -37,10 +37,9 @@ public class MainActivity extends AppCompatActivity {
     public void Calcula(View view) {
         n1 = Integer.parseInt(num1.getText().toString());
         n2 = Integer.parseInt(num2.getText().toString());
-        if (n1 < 10000 && n2 < 10000) {
+        if (n1 < 10000 && n2 < 10000) { 
             soma = n1 + n2;
             result.setText(Integer.toString(soma));
-
         }
     }
         public void Multiplicar(View view){
