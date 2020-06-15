@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
     public void Calcula(View view) {
         n1 = Integer.parseInt(num1.getText().toString());
         n2 = Integer.parseInt(num2.getText().toString());
-        if (n1 > 0 && n2 > 0) {
+        if (n1 < 10000 && n2 < 10000) {
             soma = n1 + n2;
             result.setText(Integer.toString(soma));
 
@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
         public void Multiplicar(View view){
             n1 = Integer.parseInt(num1.getText().toString());
             n2 = Integer.parseInt(num2.getText().toString());
-            if (n1 > 0 && n2 > 0) {
+            if (n1 < 10000 && n2 < 10000) {
                 multi = n1 * n2;
                 result.setText(Integer.toString(multi));
             }
@@ -54,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
         public void Dividir(View view) {
             n1 = Integer.parseInt(num1.getText().toString());
             n2 = Integer.parseInt(num2.getText().toString());
-            if (n1 > 0 && n2 > 0) {
+            if (n1 < 10000 && n2 < 10000) {
                 divi = n1 / n2;
                 result.setText(Integer.toString(divi));
             }
@@ -62,7 +62,7 @@ public class MainActivity extends AppCompatActivity {
             public void Subtrair(View view) {
                 n1 = Integer.parseInt(num1.getText().toString());
                 n2 = Integer.parseInt(num2.getText().toString());
-                if (n1 > 0 && n2 > 0) {
+                if (n1 < 10000 && n2 < 10000) {
                     subt = n1 - n2;
                     result.setText(Integer.toString(subt));
                 }
